@@ -1,0 +1,27 @@
+name: appfeaturetester
+description: "A new app for feature testing"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  camera: ^0.11.0+2
+  google_mlkit_face_detection: ^0.13.1
+  tflite_flutter: ^0.12.1
+  image: ^4.8.0
+  path_provider: ^2.1.5
+  get: ^4.7.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
