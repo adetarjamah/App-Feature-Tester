@@ -1,4 +1,4 @@
-import 'package:appfeaturetester/presentation/2_face_verification/pages/face_verification_page.dart';
+import 'package:appfeaturetester/presentation/2_face_recognition/pages/face_recognition_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -28,9 +28,9 @@ class MenuPage extends StatelessWidget {
           crossAxisSpacing: 12,
           mainAxisSpacing: 12,
           children: const [
-            MenuCard(icon: Icons.face, title: "Face Verification"),
-            MenuCard(
-                icon: Icons.face_retouching_natural, title: "Face Recognition"),
+            MenuCard(icon: Icons.face, title: "Face Recognition"),
+            // MenuCard(
+            //     icon: Icons.face_retouching_natural, title: "Face Recognition"),
           ],
         ),
       ),
@@ -49,10 +49,10 @@ class MenuCard extends StatelessWidget {
     return InkWell(
       borderRadius: BorderRadius.circular(20),
       onTap: () {
-        if (title == "Face Verification") {
-          Get.to(() => FaceVerificationPage());
-        } else if (title == "Face Recognition") {
-          // Get.to(() => const FaceRecognitionPage());
+        if (title == "Face Recognition") {
+          Get.to(() => FaceRecognitionPage());
+          // } else if (title == "Face Recognition") {
+          //   // Get.to(() => const FaceRecognitionPage());
         }
       },
       child: Ink(
